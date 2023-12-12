@@ -1,0 +1,26 @@
+PS C:\Users\emats\OneDrive\Documents\Git> git init git_challenge
+Initialized empty Git repository in C:/Users/emats/OneDrive/Documents/Git/git_challenge/.git/
+PS C:\Users\emats\OneDrive\Documents\Git> cd git_challenge
+PS C:\Users\emats\OneDrive\Documents\Git\git_challenge> echo "Hello, World!" >> hello_world.txt
+PS C:\Users\emats\OneDrive\Documents\Git\git_challenge> git add hello_world.txt
+PS C:\Users\emats\OneDrive\Documents\Git\git_challenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) 20acf5c] hello_world.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\emats\OneDrive\Documents\Git\git_challenge> echo "こんにちは、世界！" >> hello_world.txt
+PS C:\Users\emats\OneDrive\Documents\Git\git_challenge> git add hello_world.txt
+PS C:\Users\emats\OneDrive\Documents\Git\git_challenge> git commit -m "日本語訳を追加"
+[main 9b82f81] 日本語訳を追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\emats\OneDrive\Documents\Git\git_challenge> log --oneline
+log : 用語 'log' は、コマンドレット、関数、スクリプト ファイル、または操作可能なプログラムの名前として認識されません。名前が正しく記述されていることを確認し 
+、パスが含まれている場合はそのパスが正しいことを確認してから、再試行してください。
+発生場所 行:1 文字:1
++ log --oneline
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (log:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\emats\OneDrive\Documents\Git\git_challenge> git log --oneline
+9b82f81 (HEAD -> main) 日本語訳を追加
+20acf5c hello_world.txtを追加
